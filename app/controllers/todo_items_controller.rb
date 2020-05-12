@@ -26,6 +26,6 @@ def set_todo_item
  @todo_item = @todo_list.todo_items.find(params[:id])
 end
 def todo_item_params
- params[:todo_item].permit(:content)
+params[:todo_item].permit(:content, :due_date, :priority)
 end
 end
