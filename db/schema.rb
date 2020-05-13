@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 2020_05_12_132431) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.datetime "completed_at"
-    t.datetime "due_date"
-    t.string "priority"
+    t.date "due_date"
+    t.integer "priority"
     t.index ["todo_list_id"], name: "index_todo_items_on_todo_list_id"
   end
 
